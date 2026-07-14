@@ -1,0 +1,2658 @@
+{
+  "report_generated": "2026-07-14T13:57:21.518012",
+  "original_document": {
+    "source_path": "Red Herring Prospectus.pdf",
+    "page_count": 128,
+    "char_count": 339336,
+    "word_count": 52640,
+    "file_size_bytes": 5108641
+  },
+  "detection_summary": {
+    "total_detected": 328,
+    "total_redacted": 328,
+    "unique_types": {
+      "FULL_NAME": 262,
+      "EMAIL": 51,
+      "ADDRESS": 14,
+      "PHONE": 1
+    }
+  },
+  "metrics": {
+    "precision": null,
+    "recall": null,
+    "f1_score": null
+  },
+  "performance": {
+    "processing_time_seconds": 53.59279203414917
+  },
+  "errors": [],
+  "warnings": [
+    "No ground truth provided for evaluation"
+  ],
+  "detailed_replacement": [
+    {
+      "original": "Particulars Aggr",
+      "replacement": "Allison Hill",
+      "type": "FULL_NAME",
+      "start": 336470,
+      "end": 336486,
+      "confidence": 0.9
+    },
+    {
+      "original": "Mutual Funds",
+      "replacement": "Noah Rhodes",
+      "type": "FULL_NAME",
+      "start": 332604,
+      "end": 332616,
+      "confidence": 0.9
+    },
+    {
+      "original": "Share Transfer Agents",
+      "replacement": "Angie Henderson",
+      "type": "FULL_NAME",
+      "start": 331309,
+      "end": 331330,
+      "confidence": 0.9
+    },
+    {
+      "original": "UPI Bidders",
+      "replacement": "Daniel Wagner",
+      "type": "FULL_NAME",
+      "start": 330732,
+      "end": 330743,
+      "confidence": 0.9
+    },
+    {
+      "original": "Bandra Kurla Complex",
+      "replacement": "Cristian Santos",
+      "type": "FULL_NAME",
+      "start": 328913,
+      "end": 328933,
+      "confidence": 0.9
+    },
+    {
+      "original": "anand.soni@bajajfinserv.in",
+      "replacement": "amy.robinson@ramirez.com",
+      "type": "EMAIL",
+      "start": 327530,
+      "end": 327556,
+      "confidence": 1.0
+    },
+    {
+      "original": "Soni Website",
+      "replacement": "Gina Moore",
+      "type": "FULL_NAME",
+      "start": 327486,
+      "end": 327498,
+      "confidence": 0.9
+    },
+    {
+      "original": "ashishmp@federalbank.co.in",
+      "replacement": "susan.rogers@james.com",
+      "type": "EMAIL",
+      "start": 327314,
+      "end": 327340,
+      "confidence": 1.0
+    },
+    {
+      "original": "Kubera Chambers Opp",
+      "replacement": "Renee Blair",
+      "type": "FULL_NAME",
+      "start": 327117,
+      "end": 327136,
+      "confidence": 0.9
+    },
+    {
+      "original": "rm6.ifbpune@sbi.co.in",
+      "replacement": "amanda.dudley@miller-carter.org",
+      "type": "EMAIL",
+      "start": 327052,
+      "end": 327073,
+      "confidence": 1.0
+    },
+    {
+      "original": "Tara Chambers",
+      "replacement": "Heidi Lee",
+      "type": "FULL_NAME",
+      "start": 326879,
+      "end": 326892,
+      "confidence": 0.9
+    },
+    {
+      "original": "manisha.shukla@hdfcbank.com",
+      "replacement": "chad.stanley@galloway-wyatt.com",
+      "type": "EMAIL",
+      "start": 326800,
+      "end": 326827,
+      "confidence": 1.0
+    },
+    {
+      "original": "11\n6 \n \n \nHDFC Bank Limited \n5th Floor, Marathon IT Park Bund \nGarden Road",
+      "replacement": "525 Clark Grove Apt. 928\nEast Steven, KY 84387",
+      "type": "ADDRESS",
+      "start": 326593,
+      "end": 326667,
+      "confidence": 1.0
+    },
+    {
+      "original": "Cherag Gyara \nWebsite",
+      "replacement": "Colleen Nguyen",
+      "type": "FULL_NAME",
+      "start": 326511,
+      "end": 326532,
+      "confidence": 0.9
+    },
+    {
+      "original": "8879770456",
+      "replacement": "+91 03056 41395",
+      "type": "PHONE",
+      "start": 326481,
+      "end": 326491,
+      "confidence": 0.95
+    },
+    {
+      "original": "11\n5 \n \n \n \nICICI Bank Limited \nICICI Bank, CBG, 3rd Floor, \n362, Satguru House Next to \nTanishq Showroom, CTS No. \n30 \nBund Garden \nRoad",
+      "replacement": "7242 Julie Plain Suite 969\nCoxberg, NY 65187",
+      "type": "ADDRESS",
+      "start": 326286,
+      "end": 326423,
+      "confidence": 1.0
+    },
+    {
+      "original": "sharmila.joshi@indusind.com",
+      "replacement": "christopher.williams@hernandez.biz",
+      "type": "EMAIL",
+      "start": 326256,
+      "end": 326283,
+      "confidence": 1.0
+    },
+    {
+      "original": "Sharmila Joshi Website",
+      "replacement": "Janice Carlson",
+      "type": "FULL_NAME",
+      "start": 326205,
+      "end": 326227,
+      "confidence": 0.9
+    },
+    {
+      "original": "2401 \nGen Thimmayya Road",
+      "replacement": "018 Mack Junctions Apt. 462\nSmithview, NY 23917",
+      "type": "ADDRESS",
+      "start": 326086,
+      "end": 326110,
+      "confidence": 1.0
+    },
+    {
+      "original": "pro@eximbankindia.in",
+      "replacement": "william.rodriguez@evans.com",
+      "type": "EMAIL",
+      "start": 326040,
+      "end": 326060,
+      "confidence": 0.9500000000000001
+    },
+    {
+      "original": "hitesh.ramani@citi.com",
+      "replacement": "nathaniel.martin@sellers.com",
+      "type": "EMAIL",
+      "start": 325737,
+      "end": 325759,
+      "confidence": 1.0
+    },
+    {
+      "original": "hingnetare@gmail.com",
+      "replacement": "sarah.koch@allen-allen.org",
+      "type": "EMAIL",
+      "start": 325404,
+      "end": 325424,
+      "confidence": 1.0
+    },
+    {
+      "original": "parag.pansare@kirtanepandit.com",
+      "replacement": "stacey.miller@cabrera-spence.net",
+      "type": "EMAIL",
+      "start": 324911,
+      "end": 324942,
+      "confidence": 1.0
+    },
+    {
+      "original": "Gopal House",
+      "replacement": "Betty Alvarez",
+      "type": "FULL_NAME",
+      "start": 324799,
+      "end": 324810,
+      "confidence": 0.9
+    },
+    {
+      "original": "parag.pansare@kirtanepandit.com",
+      "replacement": "stacey.miller@cabrera-spence.net",
+      "type": "EMAIL",
+      "start": 324385,
+      "end": 324416,
+      "confidence": 1.0
+    },
+    {
+      "original": "Gopal House",
+      "replacement": "Betty Alvarez",
+      "type": "FULL_NAME",
+      "start": 324275,
+      "end": 324286,
+      "confidence": 0.9
+    },
+    {
+      "original": "Share Transfer Agents",
+      "replacement": "Angie Henderson",
+      "type": "FULL_NAME",
+      "start": 321117,
+      "end": 321138,
+      "confidence": 0.9
+    },
+    {
+      "original": "UPI Bidders",
+      "replacement": "Daniel Wagner",
+      "type": "FULL_NAME",
+      "start": 319195,
+      "end": 319206,
+      "confidence": 0.9
+    },
+    {
+      "original": "a Registered Broker",
+      "replacement": "Deborah Brennan",
+      "type": "FULL_NAME",
+      "start": 318827,
+      "end": 318846,
+      "confidence": 0.9
+    },
+    {
+      "original": "Tushar Gavankar",
+      "replacement": "Daniel Ryan",
+      "type": "FULL_NAME",
+      "start": 318303,
+      "end": 318318,
+      "confidence": 0.9
+    },
+    {
+      "original": "Eric Bacha/",
+      "replacement": "Christina Collins",
+      "type": "FULL_NAME",
+      "start": 318245,
+      "end": 318256,
+      "confidence": 0.9
+    },
+    {
+      "original": "pravin.teli2@hdfcbank.com",
+      "replacement": "wanda.santos@lam-hayes.com",
+      "type": "EMAIL",
+      "start": 318175,
+      "end": 318200,
+      "confidence": 1.0
+    },
+    {
+      "original": "tushar.gavankar@hdfcbank.com",
+      "replacement": "jeffrey.morgan@spencer.com",
+      "type": "EMAIL",
+      "start": 318141,
+      "end": 318169,
+      "confidence": 1.0
+    },
+    {
+      "original": "eric.bacha@hdfcbank.com",
+      "replacement": "jeremy.whitehead@jones-young.info",
+      "type": "EMAIL",
+      "start": 318116,
+      "end": 318139,
+      "confidence": 1.0
+    },
+    {
+      "original": "sachin.gawade@hdfcbank.com",
+      "replacement": "jason.anderson@johnston.biz",
+      "type": "EMAIL",
+      "start": 318088,
+      "end": 318114,
+      "confidence": 1.0
+    },
+    {
+      "original": "siddharth.jadhav@hdfcbank.com",
+      "replacement": "james.davis@gomez-jenkins.com",
+      "type": "EMAIL",
+      "start": 318057,
+      "end": 318086,
+      "confidence": 1.0
+    },
+    {
+      "original": "Varun Badai",
+      "replacement": "Victoria Garcia",
+      "type": "FULL_NAME",
+      "start": 317716,
+      "end": 317727,
+      "confidence": 0.9
+    },
+    {
+      "original": "Ipocmg@icicibank.com",
+      "replacement": "richard.morgan@wright.net",
+      "type": "EMAIL",
+      "start": 317650,
+      "end": 317670,
+      "confidence": 0.9500000000000001
+    },
+    {
+      "original": "Marg \nBackbay Reclamation \nChurchgate",
+      "replacement": "Javier Ramirez",
+      "type": "FULL_NAME",
+      "start": 317562,
+      "end": 317599,
+      "confidence": 0.9
+    },
+    {
+      "original": "Tushar Gavankar",
+      "replacement": "Daniel Ryan",
+      "type": "FULL_NAME",
+      "start": 317392,
+      "end": 317407,
+      "confidence": 0.9
+    },
+    {
+      "original": "Eric Bacha/",
+      "replacement": "Christina Collins",
+      "type": "FULL_NAME",
+      "start": 317334,
+      "end": 317345,
+      "confidence": 0.9
+    },
+    {
+      "original": "pravin.teli2@hdfcbank.com",
+      "replacement": "wanda.santos@lam-hayes.com",
+      "type": "EMAIL",
+      "start": 317264,
+      "end": 317289,
+      "confidence": 1.0
+    },
+    {
+      "original": "tushar.gavankar@hdfcbank.com",
+      "replacement": "jeffrey.morgan@spencer.com",
+      "type": "EMAIL",
+      "start": 317230,
+      "end": 317258,
+      "confidence": 1.0
+    },
+    {
+      "original": "eric.bacha@hdfcbank.com",
+      "replacement": "jeremy.whitehead@jones-young.info",
+      "type": "EMAIL",
+      "start": 317205,
+      "end": 317228,
+      "confidence": 1.0
+    },
+    {
+      "original": "sachin.gawade@hdfcbank.com",
+      "replacement": "jason.anderson@johnston.biz",
+      "type": "EMAIL",
+      "start": 317177,
+      "end": 317203,
+      "confidence": 1.0
+    },
+    {
+      "original": "siddharth.jadhav@hdfcbank.com",
+      "replacement": "james.davis@gomez-jenkins.com",
+      "type": "EMAIL",
+      "start": 317146,
+      "end": 317175,
+      "confidence": 1.0
+    },
+    {
+      "original": "Varun Badai",
+      "replacement": "Victoria Garcia",
+      "type": "FULL_NAME",
+      "start": 316781,
+      "end": 316792,
+      "confidence": 0.9
+    },
+    {
+      "original": "Ipocmg@icicibank.com",
+      "replacement": "richard.morgan@wright.net",
+      "type": "EMAIL",
+      "start": 316715,
+      "end": 316735,
+      "confidence": 0.9500000000000001
+    },
+    {
+      "original": "Marg \nBackbay Reclamation \nChurchgate",
+      "replacement": "Javier Ramirez",
+      "type": "FULL_NAME",
+      "start": 316627,
+      "end": 316664,
+      "confidence": 0.9
+    },
+    {
+      "original": "Tushar Gavankar",
+      "replacement": "Daniel Ryan",
+      "type": "FULL_NAME",
+      "start": 316445,
+      "end": 316460,
+      "confidence": 0.9
+    },
+    {
+      "original": "Eric Bacha/",
+      "replacement": "Christina Collins",
+      "type": "FULL_NAME",
+      "start": 316387,
+      "end": 316398,
+      "confidence": 0.9
+    },
+    {
+      "original": "pravin.teli2@hdfcbank.com",
+      "replacement": "wanda.santos@lam-hayes.com",
+      "type": "EMAIL",
+      "start": 316317,
+      "end": 316342,
+      "confidence": 1.0
+    },
+    {
+      "original": "tushar.gavankar@hdfcbank.com",
+      "replacement": "jeffrey.morgan@spencer.com",
+      "type": "EMAIL",
+      "start": 316283,
+      "end": 316311,
+      "confidence": 1.0
+    },
+    {
+      "original": "eric.bacha@hdfcbank.com",
+      "replacement": "jeremy.whitehead@jones-young.info",
+      "type": "EMAIL",
+      "start": 316258,
+      "end": 316281,
+      "confidence": 1.0
+    },
+    {
+      "original": "sachin.gawade@hdfcbank.com",
+      "replacement": "jason.anderson@johnston.biz",
+      "type": "EMAIL",
+      "start": 316230,
+      "end": 316256,
+      "confidence": 1.0
+    },
+    {
+      "original": "siddharth.jadhav@hdfcbank.com",
+      "replacement": "james.davis@gomez-jenkins.com",
+      "type": "EMAIL",
+      "start": 316199,
+      "end": 316228,
+      "confidence": 1.0
+    },
+    {
+      "original": "Shanti Gopalkrishnan",
+      "replacement": "Thomas Ramos",
+      "type": "FULL_NAME",
+      "start": 315705,
+      "end": 315725,
+      "confidence": 0.9
+    },
+    {
+      "original": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "michelle.pierce@pearson.com",
+      "type": "EMAIL",
+      "start": 315619,
+      "end": 315656,
+      "confidence": 1.0
+    },
+    {
+      "original": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "michelle.pierce@pearson.com",
+      "type": "EMAIL",
+      "start": 315553,
+      "end": 315590,
+      "confidence": 1.0
+    },
+    {
+      "original": "ipo@trilegal.com",
+      "replacement": "tanya.house@martin.info",
+      "type": "EMAIL",
+      "start": 315266,
+      "end": 315282,
+      "confidence": 0.9500000000000001
+    },
+    {
+      "original": "Bapat Marg",
+      "replacement": "James Brown",
+      "type": "FULL_NAME",
+      "start": 315189,
+      "end": 315199,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kishan Rastogi/Abhijit Diwan",
+      "replacement": "William Baker",
+      "type": "FULL_NAME",
+      "start": 315000,
+      "end": 315028,
+      "confidence": 0.9
+    },
+    {
+      "original": "customercare@icicisecurities.com",
+      "replacement": "kristen.gibson@horton-cross.net",
+      "type": "EMAIL",
+      "start": 314950,
+      "end": 314982,
+      "confidence": 1.0
+    },
+    {
+      "original": "ksh@icicisecurities.com",
+      "replacement": "dorothy.tucker@phillips.org",
+      "type": "EMAIL",
+      "start": 314864,
+      "end": 314887,
+      "confidence": 1.0
+    },
+    {
+      "original": "sheetal.parab@nuvama.com",
+      "replacement": "jill.brown@brown-silva.net",
+      "type": "EMAIL",
+      "start": 314570,
+      "end": 314594,
+      "confidence": 1.0
+    },
+    {
+      "original": "prakash.boricha@nuvama.com",
+      "replacement": "samantha.schmidt@yu.com",
+      "type": "EMAIL",
+      "start": 314538,
+      "end": 314564,
+      "confidence": 1.0
+    },
+    {
+      "original": "ksh.ipo@nuvama.com",
+      "replacement": "casey.jones@powell.com",
+      "type": "EMAIL",
+      "start": 314518,
+      "end": 314536,
+      "confidence": 0.9500000000000001
+    },
+    {
+      "original": "Bandra East",
+      "replacement": "Amanda Miller",
+      "type": "FULL_NAME",
+      "start": 314432,
+      "end": 314443,
+      "confidence": 0.9
+    },
+    {
+      "original": "Bandra Kurla Complex",
+      "replacement": "Cristian Santos",
+      "type": "FULL_NAME",
+      "start": 314410,
+      "end": 314430,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kishan Rastogi/Abhijit Diwan",
+      "replacement": "William Baker",
+      "type": "FULL_NAME",
+      "start": 310279,
+      "end": 310307,
+      "confidence": 0.9
+    },
+    {
+      "original": "customercare@icicisecurities.com",
+      "replacement": "kristen.gibson@horton-cross.net",
+      "type": "EMAIL",
+      "start": 310229,
+      "end": 310261,
+      "confidence": 1.0
+    },
+    {
+      "original": "ksh@icicisecurities.com",
+      "replacement": "dorothy.tucker@phillips.org",
+      "type": "EMAIL",
+      "start": 310142,
+      "end": 310165,
+      "confidence": 1.0
+    },
+    {
+      "original": "Marg Prabhadevi",
+      "replacement": "Krystal Stewart",
+      "type": "FULL_NAME",
+      "start": 310051,
+      "end": 310066,
+      "confidence": 0.9
+    },
+    {
+      "original": "customerservice.mb@nuvama.com",
+      "replacement": "jose.santiago@allen-foster.com",
+      "type": "EMAIL",
+      "start": 309871,
+      "end": 309900,
+      "confidence": 1.0
+    },
+    {
+      "original": "ksh.ipo@nuvama.com",
+      "replacement": "casey.jones@powell.com",
+      "type": "EMAIL",
+      "start": 309799,
+      "end": 309817,
+      "confidence": 0.9500000000000001
+    },
+    {
+      "original": "Bandra East",
+      "replacement": "Amanda Miller",
+      "type": "FULL_NAME",
+      "start": 309714,
+      "end": 309725,
+      "confidence": 0.9
+    },
+    {
+      "original": "Bandra Kurla Complex \n",
+      "replacement": "Timothy Walls",
+      "type": "FULL_NAME",
+      "start": 309692,
+      "end": 309714,
+      "confidence": 0.9
+    },
+    {
+      "original": "Bid Amount",
+      "replacement": "Marc Hart",
+      "type": "FULL_NAME",
+      "start": 309382,
+      "end": 309392,
+      "confidence": 0.9
+    },
+    {
+      "original": "UPI Bidders",
+      "replacement": "Daniel Wagner",
+      "type": "FULL_NAME",
+      "start": 308303,
+      "end": 308314,
+      "confidence": 0.9
+    },
+    {
+      "original": "Bidder\u2019s DP ID",
+      "replacement": "Joshua Wagner",
+      "type": "FULL_NAME",
+      "start": 308105,
+      "end": 308119,
+      "confidence": 0.9
+    },
+    {
+      "original": "Sarthak.malvadkar@kshinterantional.com",
+      "replacement": "david.bailey@suarez.com",
+      "type": "EMAIL",
+      "start": 307299,
+      "end": 307337,
+      "confidence": 1.0
+    },
+    {
+      "original": "Taluka Khed",
+      "replacement": "Roy Warner",
+      "type": "FULL_NAME",
+      "start": 307203,
+      "end": 307214,
+      "confidence": 0.9
+    },
+    {
+      "original": "Sarthak Malvadkar",
+      "replacement": "Victoria Valdez",
+      "type": "FULL_NAME",
+      "start": 307046,
+      "end": 307063,
+      "confidence": 0.9
+    },
+    {
+      "original": "462 023, Madhya Pradesh, India \n\n10\n5 \n \n \nIndu Jacob Independent Director 0529308\n4 \nA29, Abhimanshree Society, Pashan Road",
+      "replacement": "124 Pamela Summit Apt. 449\nLake Matthew, TX 83631",
+      "type": "ADDRESS",
+      "start": 306704,
+      "end": 306828,
+      "confidence": 1.0
+    },
+    {
+      "original": "411 004, Maharashtra, India \nRam Kumar Tiwari Independent Director 1093895\n8 \nA-259, JK Road",
+      "replacement": "0164 Adam Trail Apt. 427\nHoffmanville, CA 91074",
+      "type": "ADDRESS",
+      "start": 306564,
+      "end": 306656,
+      "confidence": 1.0
+    },
+    {
+      "original": "411 016, Maharashtra, India \nAjay Shriram Patil Independent Director 0121700\n0 \n602, Gopalkrupa Apartment, Bhonde colony, Prabhat Road",
+      "replacement": "PSC 8059, Box 8262\nAPO AE 40905",
+      "type": "ADDRESS",
+      "start": 306408,
+      "end": 306542,
+      "confidence": 1.0
+    },
+    {
+      "original": "Model Colony",
+      "replacement": "Timothy Stanton",
+      "type": "FULL_NAME",
+      "start": 306387,
+      "end": 306399,
+      "confidence": 0.9
+    },
+    {
+      "original": "411 004 Maharashtra, India \nDinesh Hirachand \nMunot \nIndependent Director 0004980\n1 \nPratik Bunglow, Senapati Bapat Road",
+      "replacement": "31586 Sara Freeway Apt. 260\nLake Sandra, WY 54465",
+      "type": "ADDRESS",
+      "start": 306229,
+      "end": 306349,
+      "confidence": 1.0
+    },
+    {
+      "original": "3 Prabhat Road, opposite PYC basketball court",
+      "replacement": "2160 Walker Viaduct\nBaileybury, IN 03602",
+      "type": "ADDRESS",
+      "start": 306145,
+      "end": 306190,
+      "confidence": 1.0
+    },
+    {
+      "original": "Deccan Gymkhana",
+      "replacement": "Jennifer Ramirez",
+      "type": "FULL_NAME",
+      "start": 305975,
+      "end": 305990,
+      "confidence": 0.9
+    },
+    {
+      "original": "Shivaji Nagar",
+      "replacement": "Raymond Bell",
+      "type": "FULL_NAME",
+      "start": 305960,
+      "end": 305973,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 305836,
+      "end": 305848,
+      "confidence": 0.9
+    },
+    {
+      "original": "Buena Monte",
+      "replacement": "Alexander Wiley",
+      "type": "FULL_NAME",
+      "start": 305727,
+      "end": 305738,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 305675,
+      "end": 305694,
+      "confidence": 0.9
+    },
+    {
+      "original": "3 Prabhat Road, opposite PYC basketball court",
+      "replacement": "2160 Walker Viaduct\nBaileybury, IN 03602",
+      "type": "ADDRESS",
+      "start": 305575,
+      "end": 305620,
+      "confidence": 1.0
+    },
+    {
+      "original": "Taluka-Khed \nPune",
+      "replacement": "Kyle Reed",
+      "type": "FULL_NAME",
+      "start": 304443,
+      "end": 304460,
+      "confidence": 0.9
+    },
+    {
+      "original": "Mutual Funds",
+      "replacement": "Noah Rhodes",
+      "type": "FULL_NAME",
+      "start": 302744,
+      "end": 302756,
+      "confidence": 0.9
+    },
+    {
+      "original": "Bid Lot",
+      "replacement": "Jessica Joyce",
+      "type": "FULL_NAME",
+      "start": 300935,
+      "end": 300942,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal Hegde",
+      "replacement": "Steven Lee",
+      "type": "FULL_NAME",
+      "start": 299174,
+      "end": 299192,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 299107,
+      "end": 299126,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 299047,
+      "end": 299059,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya",
+      "replacement": "Jeffrey Meyer",
+      "type": "FULL_NAME",
+      "start": 298967,
+      "end": 298982,
+      "confidence": 0.9
+    },
+    {
+      "original": "Pushpa Hegde",
+      "replacement": "Melissa Bentley",
+      "type": "FULL_NAME",
+      "start": 294352,
+      "end": 294364,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya Hegde",
+      "replacement": "Christina Reynolds",
+      "type": "FULL_NAME",
+      "start": 294311,
+      "end": 294332,
+      "confidence": 0.9
+    },
+    {
+      "original": "Supa Facility",
+      "replacement": "Tammie Hanson",
+      "type": "FULL_NAME",
+      "start": 289541,
+      "end": 289554,
+      "confidence": 0.9
+    },
+    {
+      "original": "Supa Facility",
+      "replacement": "Tammie Hanson",
+      "type": "FULL_NAME",
+      "start": 289271,
+      "end": 289284,
+      "confidence": 0.9
+    },
+    {
+      "original": "Particulars Amount",
+      "replacement": "Belinda Mccullough",
+      "type": "FULL_NAME",
+      "start": 279868,
+      "end": 279886,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial",
+      "replacement": "Mary Nguyen",
+      "type": "FULL_NAME",
+      "start": 273455,
+      "end": 273474,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park \nIX B Private Limited",
+      "replacement": "Kristen Lee",
+      "type": "FULL_NAME",
+      "start": 273400,
+      "end": 273446,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial",
+      "replacement": "Mary Nguyen",
+      "type": "FULL_NAME",
+      "start": 273349,
+      "end": 273368,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo \nIndustrial Park VIII Private Limited",
+      "replacement": "Jamie Adkins",
+      "type": "FULL_NAME",
+      "start": 273296,
+      "end": 273342,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park VI Private Limited",
+      "replacement": "Keith Sullivan",
+      "type": "FULL_NAME",
+      "start": 273245,
+      "end": 273288,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park V Private Limited",
+      "replacement": "Elizabeth Clark",
+      "type": "FULL_NAME",
+      "start": 273194,
+      "end": 273236,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park IV Private Limited",
+      "replacement": "Lisa Morris",
+      "type": "FULL_NAME",
+      "start": 273142,
+      "end": 273185,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park III Private Limited",
+      "replacement": "Michael Dixon",
+      "type": "FULL_NAME",
+      "start": 273091,
+      "end": 273135,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park II",
+      "replacement": "Toni Fitzgerald",
+      "type": "FULL_NAME",
+      "start": 273041,
+      "end": 273068,
+      "confidence": 0.9500000000000001
+    },
+    {
+      "original": "Waterloo Industrial Park",
+      "replacement": "Diane Beck",
+      "type": "FULL_NAME",
+      "start": 272992,
+      "end": 273016,
+      "confidence": 0.9
+    },
+    {
+      "original": "Supa Facility",
+      "replacement": "Tammie Hanson",
+      "type": "FULL_NAME",
+      "start": 270142,
+      "end": 270155,
+      "confidence": 0.9
+    },
+    {
+      "original": "Ajay Shriram Patil",
+      "replacement": "Anna Crane",
+      "type": "FULL_NAME",
+      "start": 267520,
+      "end": 267538,
+      "confidence": 0.9
+    },
+    {
+      "original": "250 and 269, respectively. \nOur future performance would depend on the continued service of our Individual Promoters, Senior Management, Key \nManagerial Personnel, qualified and skilled personnel with technical expertise, and the loss of any senior employee \nand the inability to find an adequate replacement may impair our relationship with key customers and our level of \ntechnical expertise, which may adversely affect our business, cash flows, financial condition, results of operations and \nprospects. Our future success, amongst other factors, will depend upon our ability to continue to attract, train and retain \nqualified personnel, particularly engineers and other associates with critical expertise, know-how and skills that are \ncapable of helping us develop products and support key customers and products. We may therefore need to increase \ncompensation and other benefits in order to attract and retain personnel in the future, which may adversely affect our \nbusiness, financial conditions, cash flows and results of operations. \nAs on date, our Company does not have a business succession policy in place",
+      "replacement": "32003 Carr Trafficway Apt. 769\nLake Heather, NM 52884",
+      "type": "ADDRESS",
+      "start": 262369,
+      "end": 263490,
+      "confidence": 1.0
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 262241,
+      "end": 262253,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 262213,
+      "end": 262232,
+      "confidence": 0.9
+    },
+    {
+      "original": "Pushpa Kushal Hegde",
+      "replacement": "Matthew Smith",
+      "type": "FULL_NAME",
+      "start": 262192,
+      "end": 262211,
+      "confidence": 0.9
+    },
+    {
+      "original": "al \nTax",
+      "replacement": "Patricia Rodriguez",
+      "type": "FULL_NAME",
+      "start": 234248,
+      "end": 234255,
+      "confidence": 0.9
+    },
+    {
+      "original": "ISO 45001:2018",
+      "replacement": "Christopher Rubio",
+      "type": "FULL_NAME",
+      "start": 231810,
+      "end": 231824,
+      "confidence": 0.9
+    },
+    {
+      "original": "ISO 14001:2015",
+      "replacement": "Amber Wright",
+      "type": "FULL_NAME",
+      "start": 231737,
+      "end": 231751,
+      "confidence": 0.9
+    },
+    {
+      "original": "ISO 9001:2015",
+      "replacement": "Joyce Solis",
+      "type": "FULL_NAME",
+      "start": 231632,
+      "end": 231645,
+      "confidence": 0.9
+    },
+    {
+      "original": "Supa Facility",
+      "replacement": "Tammie Hanson",
+      "type": "FULL_NAME",
+      "start": 225997,
+      "end": 226010,
+      "confidence": 0.9
+    },
+    {
+      "original": "Taluka Parner",
+      "replacement": "Victoria Larson",
+      "type": "FULL_NAME",
+      "start": 222895,
+      "end": 222908,
+      "confidence": 0.9
+    },
+    {
+      "original": "Sarthak Malvadkar",
+      "replacement": "Victoria Valdez",
+      "type": "FULL_NAME",
+      "start": 216027,
+      "end": 216044,
+      "confidence": 0.9
+    },
+    {
+      "original": "Amod Joshi",
+      "replacement": "Stephanie Salazar",
+      "type": "FULL_NAME",
+      "start": 216010,
+      "end": 216020,
+      "confidence": 0.9
+    },
+    {
+      "original": "Sandesh Bhagwat",
+      "replacement": "Kathy Rivas",
+      "type": "FULL_NAME",
+      "start": 215988,
+      "end": 216003,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal Hegde",
+      "replacement": "Steven Lee",
+      "type": "FULL_NAME",
+      "start": 215755,
+      "end": 215773,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 215734,
+      "end": 215753,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya Hegde",
+      "replacement": "Christina Reynolds",
+      "type": "FULL_NAME",
+      "start": 215711,
+      "end": 215732,
+      "confidence": 0.9
+    },
+    {
+      "original": "100 each allotted to Kushal Subbayya Hegde, Narayna B. Shetty and Jayaram N. Shetty, respectively, \npursuant to the initial subscription to the MoA dated June 29, 1979, were subsequently taken on record by the Board \nby way",
+      "replacement": "774 Mary Harbor\nSimsview, NV 10656",
+      "type": "ADDRESS",
+      "start": 204585,
+      "end": 204808,
+      "confidence": 1.0
+    },
+    {
+      "original": "Karunakar N. Bhandary",
+      "replacement": "Cynthia Rogers",
+      "type": "FULL_NAME",
+      "start": 204525,
+      "end": 204546,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Hegde",
+      "replacement": "Angela Hernandez",
+      "type": "FULL_NAME",
+      "start": 203507,
+      "end": 203518,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Hegde",
+      "replacement": "Christian Lewis",
+      "type": "FULL_NAME",
+      "start": 203490,
+      "end": 203502,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 203475,
+      "end": 203487,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Hegde",
+      "replacement": "Angela Hernandez",
+      "type": "FULL_NAME",
+      "start": 203089,
+      "end": 203100,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Hegde",
+      "replacement": "Christian Lewis",
+      "type": "FULL_NAME",
+      "start": 203072,
+      "end": 203084,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 203055,
+      "end": 203067,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Hegde",
+      "replacement": "Angela Hernandez",
+      "type": "FULL_NAME",
+      "start": 202932,
+      "end": 202943,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Hegde",
+      "replacement": "Christian Lewis",
+      "type": "FULL_NAME",
+      "start": 202801,
+      "end": 202813,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 202624,
+      "end": 202643,
+      "confidence": 0.9
+    },
+    {
+      "original": "Karunakar Hegde HUF",
+      "replacement": "Gary Owens",
+      "type": "FULL_NAME",
+      "start": 202502,
+      "end": 202521,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Hegde",
+      "replacement": "Angela Hernandez",
+      "type": "FULL_NAME",
+      "start": 202484,
+      "end": 202495,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 202314,
+      "end": 202326,
+      "confidence": 0.9
+    },
+    {
+      "original": "Narayana B. Shetty",
+      "replacement": "Ross Price",
+      "type": "FULL_NAME",
+      "start": 202195,
+      "end": 202213,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 202169,
+      "end": 202188,
+      "confidence": 0.9
+    },
+    {
+      "original": "Karunakar Hegde",
+      "replacement": "Theresa Smith",
+      "type": "FULL_NAME",
+      "start": 202054,
+      "end": 202069,
+      "confidence": 0.9
+    },
+    {
+      "original": "Karunakar Hegde HUF",
+      "replacement": "Gary Owens",
+      "type": "FULL_NAME",
+      "start": 202028,
+      "end": 202047,
+      "confidence": 0.9
+    },
+    {
+      "original": "Karunakar Hegde",
+      "replacement": "Theresa Smith",
+      "type": "FULL_NAME",
+      "start": 201797,
+      "end": 201812,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 201780,
+      "end": 201792,
+      "confidence": 0.9
+    },
+    {
+      "original": "Jayaram Shetty",
+      "replacement": "Laura Woods",
+      "type": "FULL_NAME",
+      "start": 201671,
+      "end": 201685,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 201652,
+      "end": 201664,
+      "confidence": 0.9
+    },
+    {
+      "original": "Karunakar Bhandary",
+      "replacement": "Elizabeth Price",
+      "type": "FULL_NAME",
+      "start": 201521,
+      "end": 201539,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 201502,
+      "end": 201514,
+      "confidence": 0.9
+    },
+    {
+      "original": "Gopal BO",
+      "replacement": "Sara Medina",
+      "type": "FULL_NAME",
+      "start": 201399,
+      "end": 201407,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 201366,
+      "end": 201378,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal \nHegde",
+      "replacement": "Rebecca Hurst",
+      "type": "FULL_NAME",
+      "start": 200790,
+      "end": 200809,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 200651,
+      "end": 200663,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 200492,
+      "end": 200511,
+      "confidence": 0.9
+    },
+    {
+      "original": "2025 or Fiscals 2025, 2024, and 2023, there can be no assurance that we will be in compliance at all times with such \nlaws, regulations and the terms and conditions of any such consents or permits. If we violate or fail to comply \nadequately with these requirements, we could be fined or otherwise sanctioned by the relevant regulators. \nOur business and operations are subject to a number of approvals, licenses, registrations and permissions for \nconstruction and operation of our manufacturing facilities, warehouses, branch offices and regional offices, in addition \nto extensive government regulations for the protection of the environment and occupational health and safety. We have \neither made or are in the process of making an application or renewal for obtaining necessary approvals that are not in \nplace",
+      "replacement": "7065 Ramsey Ville Suite 298\nSouth Brittanytown, CO 84747",
+      "type": "ADDRESS",
+      "start": 193646,
+      "end": 194462,
+      "confidence": 1.0
+    },
+    {
+      "original": "Supa Facility",
+      "replacement": "Tammie Hanson",
+      "type": "FULL_NAME",
+      "start": 180346,
+      "end": 180359,
+      "confidence": 0.9
+    },
+    {
+      "original": "Supa Facility",
+      "replacement": "Tammie Hanson",
+      "type": "FULL_NAME",
+      "start": 171569,
+      "end": 171582,
+      "confidence": 0.9
+    },
+    {
+      "original": "Supa Facility",
+      "replacement": "Tammie Hanson",
+      "type": "FULL_NAME",
+      "start": 171395,
+      "end": 171408,
+      "confidence": 0.9
+    },
+    {
+      "original": "Standard\n ma",
+      "replacement": "Sean White",
+      "type": "FULL_NAME",
+      "start": 170058,
+      "end": 170070,
+      "confidence": 0.9
+    },
+    {
+      "original": "Variou\ns \nsupplie\nrs",
+      "replacement": "Garrett Gibson",
+      "type": "FULL_NAME",
+      "start": 152784,
+      "end": 152804,
+      "confidence": 0.9
+    },
+    {
+      "original": "52 \n \n \nour customers will place",
+      "replacement": "6417 Kaitlyn Center Suite 310\nEast Jamestown, RI 20474",
+      "type": "ADDRESS",
+      "start": 151786,
+      "end": 151818,
+      "confidence": 1.0
+    },
+    {
+      "original": "Nidec Industrial Automation India Private Limited",
+      "replacement": "John Wilson",
+      "type": "FULL_NAME",
+      "start": 148105,
+      "end": 148154,
+      "confidence": 0.9
+    },
+    {
+      "original": "Bijlee Limited",
+      "replacement": "Julie Scott",
+      "type": "FULL_NAME",
+      "start": 147969,
+      "end": 147983,
+      "confidence": 0.9
+    },
+    {
+      "original": "mer \ns",
+      "replacement": "Larry Stuart",
+      "type": "FULL_NAME",
+      "start": 146535,
+      "end": 146541,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 138571,
+      "end": 138583,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 138516,
+      "end": 138528,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 138457,
+      "end": 138469,
+      "confidence": 0.9
+    },
+    {
+      "original": "Transferee Transfer",
+      "replacement": "Paula Martin",
+      "type": "FULL_NAME",
+      "start": 138159,
+      "end": 138178,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal Hegde",
+      "replacement": "Steven Lee",
+      "type": "FULL_NAME",
+      "start": 135509,
+      "end": 135527,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 135471,
+      "end": 135490,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 135441,
+      "end": 135453,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya Hegde",
+      "replacement": "Christina Reynolds",
+      "type": "FULL_NAME",
+      "start": 135385,
+      "end": 135406,
+      "confidence": 0.9
+    },
+    {
+      "original": "Cap Price",
+      "replacement": "Kenneth Hickman",
+      "type": "FULL_NAME",
+      "start": 134260,
+      "end": 134269,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal Hegde",
+      "replacement": "Steven Lee",
+      "type": "FULL_NAME",
+      "start": 132842,
+      "end": 132860,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 132804,
+      "end": 132823,
+      "confidence": 0.9
+    },
+    {
+      "original": "Pushpa Kushal Hegde",
+      "replacement": "Matthew Smith",
+      "type": "FULL_NAME",
+      "start": 132767,
+      "end": 132786,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya Hegde",
+      "replacement": "Christina Reynolds",
+      "type": "FULL_NAME",
+      "start": 132562,
+      "end": 132583,
+      "confidence": 0.9
+    },
+    {
+      "original": "ed \nShares",
+      "replacement": "Susan Brooks",
+      "type": "FULL_NAME",
+      "start": 132538,
+      "end": 132548,
+      "confidence": 0.9
+    },
+    {
+      "original": "Key Managerial Personnel",
+      "replacement": "Christina Vargas",
+      "type": "FULL_NAME",
+      "start": 131296,
+      "end": 131320,
+      "confidence": 0.9
+    },
+    {
+      "original": "Park 4 \nPrivate \nLimited",
+      "replacement": "Dana Terry",
+      "type": "FULL_NAME",
+      "start": 130345,
+      "end": 130369,
+      "confidence": 0.9
+    },
+    {
+      "original": "41 \n \n \nNature \nof \ntransacti\non \nName of \nrelated \nparty \nwith \nwhom \ntransacti\nons have \ntaken \nplace",
+      "replacement": "058 Stanley Cliff\nAlexanderchester, GU 64752",
+      "type": "ADDRESS",
+      "start": 129375,
+      "end": 129478,
+      "confidence": 1.0
+    },
+    {
+      "original": "Sarthak Malvadkar",
+      "replacement": "Victoria Valdez",
+      "type": "FULL_NAME",
+      "start": 123570,
+      "end": 123587,
+      "confidence": 0.9
+    },
+    {
+      "original": "Amod Joshi",
+      "replacement": "Stephanie Salazar",
+      "type": "FULL_NAME",
+      "start": 123553,
+      "end": 123563,
+      "confidence": 0.9
+    },
+    {
+      "original": "Sandesh Bhagwat",
+      "replacement": "Kathy Rivas",
+      "type": "FULL_NAME",
+      "start": 123531,
+      "end": 123546,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal Hegde",
+      "replacement": "Steven Lee",
+      "type": "FULL_NAME",
+      "start": 123298,
+      "end": 123316,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 123277,
+      "end": 123296,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya Hegde",
+      "replacement": "Christina Reynolds",
+      "type": "FULL_NAME",
+      "start": 123254,
+      "end": 123275,
+      "confidence": 0.9
+    },
+    {
+      "original": "Particula\nrs",
+      "replacement": "Tyler Reid",
+      "type": "FULL_NAME",
+      "start": 119057,
+      "end": 119069,
+      "confidence": 0.9
+    },
+    {
+      "original": "Sunil\n Naga",
+      "replacement": "Michelle Graham",
+      "type": "FULL_NAME",
+      "start": 118346,
+      "end": 118357,
+      "confidence": 0.9
+    },
+    {
+      "original": "Salil Ajay \nBhargava",
+      "replacement": "Tracie Nelson",
+      "type": "FULL_NAME",
+      "start": 118201,
+      "end": 118221,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rupal K. Sancheti",
+      "replacement": "Kimberly Webb",
+      "type": "FULL_NAME",
+      "start": 118144,
+      "end": 118161,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh\n Ku",
+      "replacement": "Nicholas Adams",
+      "type": "FULL_NAME",
+      "start": 117346,
+      "end": 117356,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal\n Subba",
+      "replacement": "Sandra Miller",
+      "type": "FULL_NAME",
+      "start": 116718,
+      "end": 116731,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Hegde",
+      "replacement": "Christian Lewis",
+      "type": "FULL_NAME",
+      "start": 115322,
+      "end": 115334,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal Hegde",
+      "replacement": "Steven Lee",
+      "type": "FULL_NAME",
+      "start": 114860,
+      "end": 114878,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 114807,
+      "end": 114826,
+      "confidence": 0.9
+    },
+    {
+      "original": "Pushpa Kushal Hegde",
+      "replacement": "Matthew Smith",
+      "type": "FULL_NAME",
+      "start": 114755,
+      "end": 114774,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya Hegde",
+      "replacement": "Christina Reynolds",
+      "type": "FULL_NAME",
+      "start": 114700,
+      "end": 114721,
+      "confidence": 0.9
+    },
+    {
+      "original": "Particulars Estimated \nAmount",
+      "replacement": "Dana Marshall",
+      "type": "FULL_NAME",
+      "start": 113108,
+      "end": 113137,
+      "confidence": 0.9
+    },
+    {
+      "original": "Selling Shareholder",
+      "replacement": "Jamie Johnson",
+      "type": "FULL_NAME",
+      "start": 112455,
+      "end": 112474,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park VI Private Limited",
+      "replacement": "Keith Sullivan",
+      "type": "FULL_NAME",
+      "start": 111376,
+      "end": 111419,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal Hegde",
+      "replacement": "Steven Lee",
+      "type": "FULL_NAME",
+      "start": 111191,
+      "end": 111209,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 111170,
+      "end": 111189,
+      "confidence": 0.9
+    },
+    {
+      "original": "Pushpa Kushal Hegde",
+      "replacement": "Matthew Smith",
+      "type": "FULL_NAME",
+      "start": 111149,
+      "end": 111168,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya Hegde",
+      "replacement": "Christina Reynolds",
+      "type": "FULL_NAME",
+      "start": 111126,
+      "end": 111147,
+      "confidence": 0.9
+    },
+    {
+      "original": "Reference Rate",
+      "replacement": "Catherine Lewis",
+      "type": "FULL_NAME",
+      "start": 101883,
+      "end": 101897,
+      "confidence": 0.9
+    },
+    {
+      "original": "PAT CAGR",
+      "replacement": "Gina Beard",
+      "type": "FULL_NAME",
+      "start": 86078,
+      "end": 86086,
+      "confidence": 0.9
+    },
+    {
+      "original": "B.  Non-GAAP Measures",
+      "replacement": "Desiree Smith",
+      "type": "FULL_NAME",
+      "start": 84560,
+      "end": 84581,
+      "confidence": 0.9
+    },
+    {
+      "original": "Photo Voltaic",
+      "replacement": "Angela Cortez",
+      "type": "FULL_NAME",
+      "start": 83495,
+      "end": 83508,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kisan Urja Suraksha",
+      "replacement": "Peter Vaughn DDS",
+      "type": "FULL_NAME",
+      "start": 83440,
+      "end": 83459,
+      "confidence": 0.9
+    },
+    {
+      "original": "Air Conditioning \n",
+      "replacement": "Ricky Davis II",
+      "type": "FULL_NAME",
+      "start": 82484,
+      "end": 82502,
+      "confidence": 0.9
+    },
+    {
+      "original": "Gram Jyoti \nDFI Development Finance Institution",
+      "replacement": "Elizabeth Perkins",
+      "type": "FULL_NAME",
+      "start": 81794,
+      "end": 81841,
+      "confidence": 0.9
+    },
+    {
+      "original": "Continuous Transposed Conductors",
+      "replacement": "Joseph Coleman",
+      "type": "FULL_NAME",
+      "start": 81699,
+      "end": 81731,
+      "confidence": 0.9
+    },
+    {
+      "original": "Bill Bill",
+      "replacement": "Erin Warner",
+      "type": "FULL_NAME",
+      "start": 75325,
+      "end": 75334,
+      "confidence": 0.9
+    },
+    {
+      "original": "Wilful Defaulter",
+      "replacement": "David Martinez",
+      "type": "FULL_NAME",
+      "start": 72298,
+      "end": 72314,
+      "confidence": 0.9
+    },
+    {
+      "original": "UPI Bidders",
+      "replacement": "Daniel Wagner",
+      "type": "FULL_NAME",
+      "start": 72175,
+      "end": 72186,
+      "confidence": 0.9
+    },
+    {
+      "original": "UPI Bidders",
+      "replacement": "Daniel Wagner",
+      "type": "FULL_NAME",
+      "start": 71802,
+      "end": 71813,
+      "confidence": 0.9
+    },
+    {
+      "original": "UPI Circulars",
+      "replacement": "Bryan Herrera",
+      "type": "FULL_NAME",
+      "start": 70699,
+      "end": 70712,
+      "confidence": 0.9
+    },
+    {
+      "original": "QIB Bidders",
+      "replacement": "Cathy Robinson",
+      "type": "FULL_NAME",
+      "start": 66237,
+      "end": 66248,
+      "confidence": 0.9
+    },
+    {
+      "original": "Individual Bidders",
+      "replacement": "Dr. William Warren",
+      "type": "FULL_NAME",
+      "start": 65521,
+      "end": 65539,
+      "confidence": 0.9
+    },
+    {
+      "original": "corrigenda \nthereto",
+      "replacement": "Brian Lee",
+      "type": "FULL_NAME",
+      "start": 64214,
+      "end": 64233,
+      "confidence": 0.9
+    },
+    {
+      "original": "corrigenda thereto",
+      "replacement": "Christopher Smith",
+      "type": "FULL_NAME",
+      "start": 63918,
+      "end": 63936,
+      "confidence": 0.9
+    },
+    {
+      "original": "corrigenda thereto \n",
+      "replacement": "Denise Mccann",
+      "type": "FULL_NAME",
+      "start": 62309,
+      "end": 62329,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal \nHegde",
+      "replacement": "Rebecca Hurst",
+      "type": "FULL_NAME",
+      "start": 59393,
+      "end": 59412,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 59282,
+      "end": 59301,
+      "confidence": 0.9
+    },
+    {
+      "original": "Pushpa Kushal Hegde",
+      "replacement": "Matthew Smith",
+      "type": "FULL_NAME",
+      "start": 59174,
+      "end": 59193,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya Hegde",
+      "replacement": "Christina Reynolds",
+      "type": "FULL_NAME",
+      "start": 59062,
+      "end": 59083,
+      "confidence": 0.9
+    },
+    {
+      "original": "Nuvama Nuvama Wealth Management Limited",
+      "replacement": "Melissa Martinez",
+      "type": "FULL_NAME",
+      "start": 58120,
+      "end": 58159,
+      "confidence": 0.9
+    },
+    {
+      "original": "Offer Price",
+      "replacement": "Katherine Salas",
+      "type": "FULL_NAME",
+      "start": 54754,
+      "end": 54765,
+      "confidence": 0.9
+    },
+    {
+      "original": "a Bid \nEscrow Collection Bank",
+      "replacement": "Julie Alexander",
+      "type": "FULL_NAME",
+      "start": 54151,
+      "end": 54180,
+      "confidence": 0.9
+    },
+    {
+      "original": "UPI Bidders",
+      "replacement": "Daniel Wagner",
+      "type": "FULL_NAME",
+      "start": 52231,
+      "end": 52242,
+      "confidence": 0.9
+    },
+    {
+      "original": "UPI Bidders",
+      "replacement": "Daniel Wagner",
+      "type": "FULL_NAME",
+      "start": 52134,
+      "end": 52145,
+      "confidence": 0.9
+    },
+    {
+      "original": "UPI Bidders",
+      "replacement": "Daniel Wagner",
+      "type": "FULL_NAME",
+      "start": 48264,
+      "end": 48275,
+      "confidence": 0.9
+    },
+    {
+      "original": "Schedule XIII",
+      "replacement": "Anthony Everett",
+      "type": "FULL_NAME",
+      "start": 47897,
+      "end": 47910,
+      "confidence": 0.9500000000000001
+    },
+    {
+      "original": "UPI Bidders",
+      "replacement": "Daniel Wagner",
+      "type": "FULL_NAME",
+      "start": 42381,
+      "end": 42392,
+      "confidence": 0.9
+    },
+    {
+      "original": "Mutual Funds",
+      "replacement": "Noah Rhodes",
+      "type": "FULL_NAME",
+      "start": 42071,
+      "end": 42083,
+      "confidence": 0.9
+    },
+    {
+      "original": "Acknowledgement Slip",
+      "replacement": "Rodney Morales",
+      "type": "FULL_NAME",
+      "start": 38846,
+      "end": 38866,
+      "confidence": 0.9
+    },
+    {
+      "original": "Taluka Khed",
+      "replacement": "Roy Warner",
+      "type": "FULL_NAME",
+      "start": 38427,
+      "end": 38438,
+      "confidence": 0.9
+    },
+    {
+      "original": "Village Khalumbre",
+      "replacement": "Mark Brown",
+      "type": "FULL_NAME",
+      "start": 38408,
+      "end": 38425,
+      "confidence": 0.9
+    },
+    {
+      "original": "Chakan Taluka - \nKhed",
+      "replacement": "Justin Torres",
+      "type": "FULL_NAME",
+      "start": 38257,
+      "end": 38278,
+      "confidence": 0.9
+    },
+    {
+      "original": "Sangeeta Ramprasad Rai",
+      "replacement": "Bailey Duran DDS",
+      "type": "FULL_NAME",
+      "start": 36899,
+      "end": 36921,
+      "confidence": 0.9
+    },
+    {
+      "original": "Sangeeta Branch",
+      "replacement": "Courtney Mills",
+      "type": "FULL_NAME",
+      "start": 36883,
+      "end": 36898,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 36799,
+      "end": 36811,
+      "confidence": 0.9
+    },
+    {
+      "original": "Chakan Taluka-Khed",
+      "replacement": "Jeremy Dalton",
+      "type": "FULL_NAME",
+      "start": 35338,
+      "end": 35356,
+      "confidence": 0.9
+    },
+    {
+      "original": "Annapurna Family \nTrust \nRegistered Office",
+      "replacement": "Elizabeth Oliver DDS",
+      "type": "FULL_NAME",
+      "start": 35206,
+      "end": 35248,
+      "confidence": 0.9
+    },
+    {
+      "original": "Girija Shetty",
+      "replacement": "Theresa Clark",
+      "type": "FULL_NAME",
+      "start": 35133,
+      "end": 35146,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 35029,
+      "end": 35041,
+      "confidence": 0.9
+    },
+    {
+      "original": "Broad Family \nTrust",
+      "replacement": "Matthew Moore",
+      "type": "FULL_NAME",
+      "start": 34932,
+      "end": 34951,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal Hegde",
+      "replacement": "Steven Lee",
+      "type": "FULL_NAME",
+      "start": 34828,
+      "end": 34846,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 34804,
+      "end": 34823,
+      "confidence": 0.9
+    },
+    {
+      "original": "Pushpa Kushal Hegde",
+      "replacement": "Matthew Smith",
+      "type": "FULL_NAME",
+      "start": 34783,
+      "end": 34802,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya Hegde",
+      "replacement": "Christina Reynolds",
+      "type": "FULL_NAME",
+      "start": 34760,
+      "end": 34781,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial \n",
+      "replacement": "Benjamin Smith",
+      "type": "FULL_NAME",
+      "start": 34684,
+      "end": 34705,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal Hegde",
+      "replacement": "Steven Lee",
+      "type": "FULL_NAME",
+      "start": 34495,
+      "end": 34513,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 34474,
+      "end": 34493,
+      "confidence": 0.9
+    },
+    {
+      "original": "Pushpa Kushal Hegde",
+      "replacement": "Matthew Smith",
+      "type": "FULL_NAME",
+      "start": 34453,
+      "end": 34472,
+      "confidence": 0.9
+    },
+    {
+      "original": "Promoters Kushal Subbayya Hegde",
+      "replacement": "Kirk Carter",
+      "type": "FULL_NAME",
+      "start": 34420,
+      "end": 34451,
+      "confidence": 0.9
+    },
+    {
+      "original": "Dhaulagiri Family \nTrust",
+      "replacement": "Michael Warner",
+      "type": "FULL_NAME",
+      "start": 34158,
+      "end": 34182,
+      "confidence": 0.9
+    },
+    {
+      "original": "Pushpa Kushal Hegde",
+      "replacement": "Matthew Smith",
+      "type": "FULL_NAME",
+      "start": 34114,
+      "end": 34133,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 32889,
+      "end": 32908,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal Hegde",
+      "replacement": "Steven Lee",
+      "type": "FULL_NAME",
+      "start": 32465,
+      "end": 32483,
+      "confidence": 0.9
+    },
+    {
+      "original": "Lalit Muljibhai \nSarvaiya",
+      "replacement": "Michael Bradshaw",
+      "type": "FULL_NAME",
+      "start": 32107,
+      "end": 32132,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park IX",
+      "replacement": "Lori Guerrero",
+      "type": "FULL_NAME",
+      "start": 31763,
+      "end": 31790,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park IX B Private Limited",
+      "replacement": "Jessica Stephens",
+      "type": "FULL_NAME",
+      "start": 31716,
+      "end": 31761,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park IX",
+      "replacement": "Lori Guerrero",
+      "type": "FULL_NAME",
+      "start": 31670,
+      "end": 31697,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park VIII Private Limited",
+      "replacement": "Susan Serrano",
+      "type": "FULL_NAME",
+      "start": 31623,
+      "end": 31668,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park VI Private \nLimited",
+      "replacement": "Christopher Parker",
+      "type": "FULL_NAME",
+      "start": 31577,
+      "end": 31621,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park V Private Limited",
+      "replacement": "Elizabeth Clark",
+      "type": "FULL_NAME",
+      "start": 31533,
+      "end": 31575,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park IV Private \nLimited",
+      "replacement": "Laura Roberts",
+      "type": "FULL_NAME",
+      "start": 31487,
+      "end": 31531,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park III Private Limited",
+      "replacement": "Michael Dixon",
+      "type": "FULL_NAME",
+      "start": 31441,
+      "end": 31485,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial Park II",
+      "replacement": "Toni Fitzgerald",
+      "type": "FULL_NAME",
+      "start": 31395,
+      "end": 31422,
+      "confidence": 0.9500000000000001
+    },
+    {
+      "original": "Waterloo Industrial Park",
+      "replacement": "Diane Beck",
+      "type": "FULL_NAME",
+      "start": 31351,
+      "end": 31375,
+      "confidence": 0.9
+    },
+    {
+      "original": "Sangeeta Branch",
+      "replacement": "Courtney Mills",
+      "type": "FULL_NAME",
+      "start": 30775,
+      "end": 30790,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Branch",
+      "replacement": "Michael Lyons",
+      "type": "FULL_NAME",
+      "start": 30760,
+      "end": 30773,
+      "confidence": 0.9
+    },
+    {
+      "original": "Waterloo Industrial",
+      "replacement": "Mary Nguyen",
+      "type": "FULL_NAME",
+      "start": 29935,
+      "end": 29954,
+      "confidence": 0.9
+    },
+    {
+      "original": "Sarthak Malvadkar",
+      "replacement": "Victoria Valdez",
+      "type": "FULL_NAME",
+      "start": 29548,
+      "end": 29565,
+      "confidence": 0.9
+    },
+    {
+      "original": "Amod Joshi",
+      "replacement": "Stephanie Salazar",
+      "type": "FULL_NAME",
+      "start": 29316,
+      "end": 29326,
+      "confidence": 0.9
+    },
+    {
+      "original": "Sandesh Bhagwat",
+      "replacement": "Kathy Rivas",
+      "type": "FULL_NAME",
+      "start": 29115,
+      "end": 29130,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya Hegde",
+      "replacement": "Christina Reynolds",
+      "type": "FULL_NAME",
+      "start": 28936,
+      "end": 28957,
+      "confidence": 0.9
+    },
+    {
+      "original": "Chakan Taluka - \nKhed",
+      "replacement": "Justin Torres",
+      "type": "FULL_NAME",
+      "start": 27160,
+      "end": 27181,
+      "confidence": 0.9
+    },
+    {
+      "original": "Chakan Taluka - Khed",
+      "replacement": "Kathryn Snyder",
+      "type": "FULL_NAME",
+      "start": 25914,
+      "end": 25934,
+      "confidence": 0.9
+    },
+    {
+      "original": "Shanti Gopalkrishnan",
+      "replacement": "Thomas Ramos",
+      "type": "FULL_NAME",
+      "start": 22204,
+      "end": 22224,
+      "confidence": 0.9
+    },
+    {
+      "original": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "michelle.pierce@pearson.com",
+      "type": "EMAIL",
+      "start": 22149,
+      "end": 22186,
+      "confidence": 1.0
+    },
+    {
+      "original": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "michelle.pierce@pearson.com",
+      "type": "EMAIL",
+      "start": 22052,
+      "end": 22089,
+      "confidence": 1.0
+    },
+    {
+      "original": "Kishan Rastogi/Abhijit Diwan",
+      "replacement": "William Baker",
+      "type": "FULL_NAME",
+      "start": 21773,
+      "end": 21801,
+      "confidence": 0.9
+    },
+    {
+      "original": "customercare@icicisecurities.com",
+      "replacement": "kristen.gibson@horton-cross.net",
+      "type": "EMAIL",
+      "start": 21723,
+      "end": 21755,
+      "confidence": 1.0
+    },
+    {
+      "original": "ksh@icicisecurities.com",
+      "replacement": "dorothy.tucker@phillips.org",
+      "type": "EMAIL",
+      "start": 21638,
+      "end": 21661,
+      "confidence": 1.0
+    },
+    {
+      "original": "Appasaheb Marathe Marg,",
+      "replacement": "Andrew Reynolds",
+      "type": "FULL_NAME",
+      "start": 21535,
+      "end": 21558,
+      "confidence": 0.9
+    },
+    {
+      "original": "customerservice.mb@nuvama.com",
+      "replacement": "jose.santiago@allen-foster.com",
+      "type": "EMAIL",
+      "start": 21372,
+      "end": 21401,
+      "confidence": 1.0
+    },
+    {
+      "original": "ksh.ipo@nuvama.com",
+      "replacement": "casey.jones@powell.com",
+      "type": "EMAIL",
+      "start": 21301,
+      "end": 21319,
+      "confidence": 0.9500000000000001
+    },
+    {
+      "original": "Bandra East",
+      "replacement": "Amanda Miller",
+      "type": "FULL_NAME",
+      "start": 21223,
+      "end": 21234,
+      "confidence": 0.9
+    },
+    {
+      "original": "Bandra \nKurla Complex",
+      "replacement": "David Davis",
+      "type": "FULL_NAME",
+      "start": 21200,
+      "end": 21221,
+      "confidence": 0.9
+    },
+    {
+      "original": "Cap Price",
+      "replacement": "Kenneth Hickman",
+      "type": "FULL_NAME",
+      "start": 17390,
+      "end": 17399,
+      "confidence": 0.9
+    },
+    {
+      "original": "Floor Price",
+      "replacement": "Sara Johnston",
+      "type": "FULL_NAME",
+      "start": 17375,
+      "end": 17386,
+      "confidence": 0.9
+    },
+    {
+      "original": "Mutual Funds",
+      "replacement": "Noah Rhodes",
+      "type": "FULL_NAME",
+      "start": 14894,
+      "end": 14906,
+      "confidence": 0.9
+    },
+    {
+      "original": "RAJESH KUSHAL HEGDE",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 11318,
+      "end": 11337,
+      "confidence": 0.9
+    },
+    {
+      "original": "KUSHAL HEGDE",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 10235,
+      "end": 10247,
+      "confidence": 0.9
+    },
+    {
+      "original": "RAJESH KUSHAL HEGDE",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 10208,
+      "end": 10227,
+      "confidence": 0.9
+    },
+    {
+      "original": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Matthew Smith",
+      "type": "FULL_NAME",
+      "start": 10187,
+      "end": 10206,
+      "confidence": 0.9
+    },
+    {
+      "original": "cs.connect@kshinternational.com",
+      "replacement": "stephanie.key@underwood.com",
+      "type": "EMAIL",
+      "start": 10081,
+      "end": 10112,
+      "confidence": 1.0
+    },
+    {
+      "original": "Sarthak Malvadkar",
+      "replacement": "Victoria Valdez",
+      "type": "FULL_NAME",
+      "start": 9981,
+      "end": 9998,
+      "confidence": 0.9
+    },
+    {
+      "original": "Chakan Taluka - Khed",
+      "replacement": "Kathryn Snyder",
+      "type": "FULL_NAME",
+      "start": 9786,
+      "end": 9806,
+      "confidence": 0.9
+    },
+    {
+      "original": "kshinternational.ipo@in.mpms.mufg.com",
+      "replacement": "michelle.pierce@pearson.com",
+      "type": "EMAIL",
+      "start": 7168,
+      "end": 7205,
+      "confidence": 1.0
+    },
+    {
+      "original": "ksh@icicisecurities.com",
+      "replacement": "dorothy.tucker@phillips.org",
+      "type": "EMAIL",
+      "start": 6890,
+      "end": 6913,
+      "confidence": 1.0
+    },
+    {
+      "original": "ksh.ipo@nuvama.com",
+      "replacement": "casey.jones@powell.com",
+      "type": "EMAIL",
+      "start": 6761,
+      "end": 6779,
+      "confidence": 0.9500000000000001
+    },
+    {
+      "original": "Nuvama\n Wea",
+      "replacement": "Matthew Moon",
+      "type": "FULL_NAME",
+      "start": 6677,
+      "end": 6688,
+      "confidence": 0.9
+    },
+    {
+      "original": "Cap Price",
+      "replacement": "Kenneth Hickman",
+      "type": "FULL_NAME",
+      "start": 3312,
+      "end": 3321,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rohit Kushal Hegde Pro\nm",
+      "replacement": "Kevin Walters",
+      "type": "FULL_NAME",
+      "start": 2626,
+      "end": 2650,
+      "confidence": 0.9
+    },
+    {
+      "original": "Rajesh Kushal Hegde",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 2539,
+      "end": 2558,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Hegde Pro",
+      "replacement": "Brandon Bailey MD",
+      "type": "FULL_NAME",
+      "start": 2460,
+      "end": 2476,
+      "confidence": 0.9
+    },
+    {
+      "original": "Kushal Subbayya",
+      "replacement": "Jeffrey Meyer",
+      "type": "FULL_NAME",
+      "start": 2361,
+      "end": 2376,
+      "confidence": 0.9
+    },
+    {
+      "original": "KUSHAL HEGDE",
+      "replacement": "Meghan Anthony",
+      "type": "FULL_NAME",
+      "start": 840,
+      "end": 852,
+      "confidence": 0.9
+    },
+    {
+      "original": "RAJESH KUSHAL HEGDE",
+      "replacement": "Kevin Terrell",
+      "type": "FULL_NAME",
+      "start": 812,
+      "end": 831,
+      "confidence": 0.9
+    },
+    {
+      "original": "PUSHPA KUSHAL HEGDE",
+      "replacement": "Matthew Smith",
+      "type": "FULL_NAME",
+      "start": 791,
+      "end": 810,
+      "confidence": 0.9
+    },
+    {
+      "original": "cs.connect@kshinternational.co",
+      "replacement": "elizabeth.hodge@jenkins-simpson.biz",
+      "type": "EMAIL",
+      "start": 660,
+      "end": 690,
+      "confidence": 1.0
+    },
+    {
+      "original": "Sarthak Malvadkar \nCompany",
+      "replacement": "Krista Gibson",
+      "type": "FULL_NAME",
+      "start": 587,
+      "end": 613,
+      "confidence": 0.9
+    },
+    {
+      "original": "Baner Pune",
+      "replacement": "Frank Cordova",
+      "type": "FULL_NAME",
+      "start": 542,
+      "end": 552,
+      "confidence": 0.9
+    },
+    {
+      "original": "Chakan Taluka - \nKhed Pune",
+      "replacement": "Jose Travis",
+      "type": "FULL_NAME",
+      "start": 422,
+      "end": 448,
+      "confidence": 0.9
+    }
+  ]
+}
