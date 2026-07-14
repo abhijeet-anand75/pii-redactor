@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Project specific
+output/
+input/*.pdf
+*.log
+*.pyc
+.coverage
+htmlcov/
+.mypy_cache/
+.pytest_cache/
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# PDF files (sensitive documents)
+*.pdf
+
+# Test outputs
+test_output/
+report/
+
+# Directory structure listing
+directory_structure.txt
+
+# JSON reports
+*.json
+
+# Temporary test files
+test_*.pdf
+test_*.json
+ground_truth*.json
+
+# Output directories
+output/
