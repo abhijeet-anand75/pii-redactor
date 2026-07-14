@@ -10,7 +10,7 @@ from typing import Optional, List, Tuple, Dict, Any
 from io import BytesIO
 
 from pypdf import PdfReader, PdfWriter
-from pypdf.generic import TextStringObject, NameObject, ArrayObject
+from pypdf.generic import TextStringObject, NameObject, ArrayObject, RectangleObject
 from pypdf.annotations import FreeText
 
 from src.models import DocumentContext
@@ -140,44 +140,23 @@ class PDFHandler:
                 # Get the redacted text for this page
                 page_text = redacted_pages[page_num] if page_num < len(redacted_pages) else ""
                 
-                # Create a new page with the same dimensions
+                # Create a blank page with the same dimensions
                 new_page = writer.add_blank_page(
                     width=page.mediabox.width,
                     height=page.mediabox.height
                 )
                 
-                # Extract text positions from original page
-                text_positions = self._extract_text_positions(page)
-                
-                # Overlay redacted text at the same positions
-                if page_text and text_positions:
-                    self._overlay_redacted_text(
-                        new_page,
-                        page_text,
-                        text_positions,
-                        page.mediabox.width,
-                        page.mediabox.height
-                    )
-                elif page_text:
-                    # Fallback: simple text placement
-                    self._overlay_redacted_text_fallback(
+                # Overlay redacted text on the page
+                if page_text:
+                    # Try to use reportlab for better text placement
+                    self._overlay_redacted_text_with_reportlab(
                         new_page,
                         page_text,
                         page.mediabox.width,
                         page.mediabox.height
                     )
-                
-                # Copy annotations and metadata where possible
-                try:
-                    if hasattr(page, 'annotations') and page.annotations is not None:
-                        # Ensure new_page has an annotations list
-                        if not hasattr(new_page, 'annotations') or new_page.annotations is None:
-                            new_page.annotations = ArrayObject()
-                        # Add each annotation
-                        for annotation in page.annotations:
-                            new_page.annotations.append(annotation)
-                except Exception as e:
-                    self._logger.debug(f"Could not copy annotations: {e}")
+                else:
+                    self._logger.debug(f"No text to overlay on page {page_num + 1}")
             
             # Save the redacted PDF
             with open(output_path, 'wb') as f:
@@ -185,7 +164,7 @@ class PDFHandler:
             
             self._logger.info(f"Redacted PDF saved to: {output_path}")
             
-            # Log redaction summary - FIXED: handle division by zero
+            # Log redaction summary
             if original_context:
                 original_len = len(original_context.raw_text)
                 redacted_len = len(redacted_text)
@@ -225,28 +204,6 @@ class PDFHandler:
         if page_count == 1:
             return [text]
         
-        # Simple heuristic: split by empty lines or estimate equal distribution
-        # For better accuracy, we would need to preserve page break information
-        # from extraction
-        
-        # Try to find page breaks in the original text
-        # This is a heuristic - actual implementation would use metadata
-        original_text_parts = []
-        for page in reader.pages:
-            try:
-                page_text = page.extract_text()
-                original_text_parts.append(page_text or "")
-            except Exception:
-                original_text_parts.append("")
-        
-        # If we have original page text, use it to find boundaries
-        if all(part for part in original_text_parts):
-            # Build a combined text and find where each page starts
-            # This is complex; for simplicity, we'll use a fallback
-            pass
-        
-        # Fallback: distribute text evenly across pages
-        # This is a simplification - actual implementation would be more sophisticated
         if not text:
             return [""] * page_count
         
@@ -260,61 +217,33 @@ class PDFHandler:
             # Determine how many paragraphs for this page
             remaining_paras = len(paragraphs) - para_idx
             remaining_pages = page_count - i
-            paras_for_page = remaining_paras // remaining_pages
             
-            if paras_for_page == 0:
-                paras_for_page = 1
+            if remaining_paras <= 0:
+                result.append("")
+                continue
             
+            paras_for_page = max(1, remaining_paras // remaining_pages)
             page_text = '\n\n'.join(paragraphs[para_idx:para_idx + paras_for_page])
             result.append(page_text)
             para_idx += paras_for_page
         
         return result
     
-    def _extract_text_positions(self, page) -> List[Dict[str, Any]]:
-        """
-        Extract text positions from a PDF page.
-        
-        Args:
-            page: The PDF page object.
-            
-        Returns:
-            List of dictionaries with text and position information.
-        """
-        positions = []
-        
-        try:
-            # Use the page's text extraction with positions
-            # This is a simplified version - actual implementation would use
-            # more sophisticated positioning
-            
-            # Check if we can extract with positions
-            if hasattr(page, 'extract_text') and hasattr(page, 'mediabox'):
-                # For each piece of text, we'd extract its position
-                # This is a placeholder - actual implementation would use
-                # a library like pdfplumber for precise positioning
-                pass
-                
-        except Exception as e:
-            self._logger.debug(f"Could not extract text positions: {e}")
-        
-        return positions
-    
-    def _overlay_redacted_text(
+    def _overlay_redacted_text_with_reportlab(
         self,
         page,
         text: str,
-        positions: List[Dict[str, Any]],
         page_width: float,
         page_height: float
     ) -> None:
         """
-        Overlay redacted text on a PDF page.
+        Overlay redacted text on a PDF page using reportlab.
+        
+        Creates a new PDF with the text and merges it onto the page.
         
         Args:
             page: The PDF page object.
             text: The redacted text to overlay.
-            positions: Text positions from the original.
             page_width: Width of the page.
             page_height: Height of the page.
         """
@@ -322,64 +251,64 @@ class PDFHandler:
             return
         
         try:
-            # Import reportlab for text rendering
+            # Try to import reportlab
             from reportlab.pdfgen import canvas
             from reportlab.lib.pagesizes import letter
-            from reportlab.lib.units import mm
-            from io import BytesIO
+            from reportlab.pdfbase import pdfmetrics
+            from reportlab.pdfbase.ttfonts import TTFont
+            from reportlab.lib.units import inch
             
             # Create a new PDF with the redacted text
             packet = BytesIO()
             c = canvas.Canvas(packet, pagesize=(page_width, page_height))
             
             # Set font and size
-            c.setFont('Helvetica', 10)
+            c.setFont('Helvetica', 9)
             
-            # If we have positions, use them
-            if positions:
-                for pos in positions:
-                    x = pos.get('x', 10)
-                    y = page_height - pos.get('y', 10)  # PDF coordinates are from bottom
-                    text_at_pos = pos.get('text', '')
-                    if text_at_pos:
-                        c.drawString(x, y, text_at_pos)
-            else:
-                # Fallback: write text at the top
-                text_lines = text.split('\n')[:50]  # Limit lines
-                y = page_height - 30
-                for line in text_lines:
+            # Write text starting from the top of the page
+            text_lines = text.split('\n')
+            y = page_height - 30
+            max_chars_per_line = 90
+            
+            for line in text_lines:
+                if y < 30:
+                    break
+                # Wrap long lines
+                wrapped_lines = self._wrap_text(line, max_chars_per_line)
+                for wrapped_line in wrapped_lines:
                     if y < 30:
                         break
-                    c.drawString(30, y, line[:100])  # Limit line length
-                    y -= 14
+                    try:
+                        c.drawString(30, y, wrapped_line)
+                    except Exception as e:
+                        self._logger.debug(f"Could not draw string: {e}")
+                    y -= 12
             
             c.save()
             
-            # Merge the new text with the blank page
+            # Move to the beginning of the BytesIO buffer
             packet.seek(0)
-            new_pdf = PdfReader(packet)
             
-            if new_pdf.pages:
-                # Get the text layer
-                text_layer = new_pdf.pages[0]
+            # Read the new PDF with the text layer
+            text_pdf = PdfReader(packet)
+            
+            if text_pdf.pages:
+                # Get the text layer page
+                text_layer = text_pdf.pages[0]
                 
-                # Merge the text layer onto the blank page
-                # This is a simplified merge - actual implementation would
-                # use page.merge_page() or similar
+                # Merge the text layer onto the page
                 try:
                     page.merge_page(text_layer)
                 except Exception as e:
-                    self._logger.warning(f"Could not merge text layer: {e}")
-                    # Fallback: use the blank page with text directly
-                    pass
+                    self._logger.warning(f"Could not merge page: {e}")
+                    # Fallback: use annotations
+                    self._overlay_redacted_text_fallback(page, text, page_width, page_height)
             
         except ImportError:
-            # If reportlab is not available, use a simpler approach
             self._logger.warning("reportlab not available, using fallback text placement")
             self._overlay_redacted_text_fallback(page, text, page_width, page_height)
         except Exception as e:
-            self._logger.warning(f"Text overlay failed: {e}")
-            # Fallback to simple overlay
+            self._logger.warning(f"Text overlay failed: {e}, using fallback")
             self._overlay_redacted_text_fallback(page, text, page_width, page_height)
     
     def _overlay_redacted_text_fallback(
@@ -392,7 +321,7 @@ class PDFHandler:
         """
         Fallback method for overlaying text on a PDF page.
         
-        Uses simple text placement without precise positioning.
+        Uses FreeText annotations for text placement.
         
         Args:
             page: The PDF page object.
@@ -401,40 +330,75 @@ class PDFHandler:
             page_height: Height of the page.
         """
         try:
-            # Use pypdf's built-in text capabilities
-            # This is a simplified approach - create a simple text annotation
-            
             # Split text into lines
-            lines = text.split('\n')[:30]  # Limit lines
+            lines = text.split('\n')[:50]
             
-            # Add text as an annotation
-            from pypdf.generic import RectangleObject
+            # Ensure page has annotations attribute
+            if not hasattr(page, 'annotations') or page.annotations is None:
+                page.annotations = ArrayObject()
             
             y_pos = page_height - 20
             for line in lines:
                 if y_pos < 20:
                     break
                 
-                # Create a text annotation
-                try:
-                    # Ensure page has annotations attribute
-                    if not hasattr(page, 'annotations') or page.annotations is None:
-                        page.annotations = ArrayObject()
-                    
-                    annotation = FreeText(
-                        rect=RectangleObject((20, y_pos, page_width - 20, y_pos + 12)),
-                        text=line[:100],
-                        font="Helvetica",
-                        font_size=10
-                    )
-                    page.annotations.append(annotation)
-                except Exception as e:
-                    self._logger.debug(f"Could not add text annotation: {e}")
-                
-                y_pos -= 14
+                # Wrap long lines
+                wrapped_lines = self._wrap_text(line, 80)
+                for wrapped_line in wrapped_lines:
+                    if y_pos < 20:
+                        break
+                    try:
+                        annotation = FreeText(
+                            rect=RectangleObject((20, y_pos - 10, page_width - 20, y_pos + 12)),
+                            text=wrapped_line,
+                            font="Helvetica",
+                            font_size=9
+                        )
+                        page.annotations.append(annotation)
+                    except Exception as e:
+                        self._logger.debug(f"Could not add text annotation: {e}")
+                    y_pos -= 14
             
         except Exception as e:
             self._logger.warning(f"Fallback text overlay failed: {e}")
+    
+    def _wrap_text(self, text: str, max_chars: int) -> List[str]:
+        """
+        Wrap text to a maximum number of characters per line.
+        
+        Args:
+            text: The text to wrap.
+            max_chars: Maximum characters per line.
+            
+        Returns:
+            List of wrapped lines.
+        """
+        if not text:
+            return [""]
+        
+        if len(text) <= max_chars:
+            return [text]
+        
+        words = text.split()
+        lines = []
+        current_line = []
+        current_length = 0
+        
+        for word in words:
+            word_len = len(word)
+            if current_length + word_len + 1 <= max_chars:
+                current_line.append(word)
+                current_length += word_len + 1
+            else:
+                if current_line:
+                    lines.append(' '.join(current_line))
+                current_line = [word]
+                current_length = word_len + 1
+        
+        if current_line:
+            lines.append(' '.join(current_line))
+        
+        return lines
     
     def get_supported_extensions(self) -> List[str]:
         """
